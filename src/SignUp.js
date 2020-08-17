@@ -14,7 +14,7 @@ export default class SignUp extends Component {
     const body = this.state.email;
     console.log(body);
     try {
-      await axios.post("http://localhost:5000", body);
+      await axios.get(`http://localhost:8080/api/sendEmail?email=${body}`);
     } catch (error) {
       console.log(error);
       alert("Something went wrong. Please try again.");
