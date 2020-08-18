@@ -16,14 +16,14 @@ export default class EditAlert extends Component {
     if (supermarket === "All") {
       supermarket = "";
     }
-    let celeryRef = this.celeryRef.current.value;
-    if (celeryRef === "on") {
-      extra.search = "celery";
-    }
-    let crustaceansRef = this.crustaceansRef.current.value;
-    if (crustaceansRef === "on") {
-      extra.search = "crustaceans";
-    }
+    // let celeryRef = this.celeryRef.current.value;
+    // if (celeryRef === "on") {
+    //   extra.search = "celery";
+    // }
+    // let crustaceansRef = this.crustaceansRef.current.value;
+    // if (crustaceansRef === "on") {
+    //   extra.search = "crustaceans";
+    // }
 
     try {
       const request = await axios.get(baseURL, {
@@ -75,7 +75,7 @@ export default class EditAlert extends Component {
                   </option>
                 </Form.Control>
               </Form.Group>
-              <Form.Group controlId="allergens">
+              {/* <Form.Group controlId="allergens">
                 <Form.Check
                   inline
                   label="celery"
@@ -90,7 +90,7 @@ export default class EditAlert extends Component {
                   id="crustaceans"
                   ref={this.crustaceansRef}
                 />
-              </Form.Group>
+              </Form.Group> */}
               <Button variant="primary" type="submit">
                 Submit
               </Button>
