@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Food Alert App
+
+Application Overview: 
+
+React web application that will allow a user to search for food allergy alerts issued by the FSA. The user is able to filter the data by location and can see what allergies the alert involves.
+
+Users will also have the option to provide their email and recieve emails each time a new alert is issued. They can select a specific allergy if they want to filter what alerts they will be notified about.
+
 ## Available Scripts
 
 In the project directory, you can run:
